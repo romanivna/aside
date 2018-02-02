@@ -4,7 +4,7 @@
 	src: url('fonts/AmaticSC-Regular.eot');
 	src: local('☺'), url('fonts/AmaticSC-Regular.woff') format('woff'), url('fonts/AmaticSC-Regular.ttf') format('truetype'), url('fonts/AmaticSC-Regular.svg') format('svg');
 	font-weight: normal;
-	font-style: normal;
+	font-style: cursive;
 }
 
 html{
