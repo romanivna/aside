@@ -52,12 +52,9 @@ function content(){
 				$('body').width(contentWidth)
 				$('nav').width(contentWidth)
 			} else if($(window).width()<768) {mobileAsides()
-<<<<<<< HEAD
+
 	}
-}else {
-=======
-	} else {
->>>>>>> 74363e4c6e19c4f57cd6ae53eac2bb59d1dad321
+} else {
 		var asidePosition = ($(window).width()-1024)/2;
 		$('.left-aside').css('left',asidePosition);
 		$('.right-aside').css('right',asidePosition);
