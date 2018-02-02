@@ -28,7 +28,7 @@ html{
 }
 
 .page-description p{
-  font-family: Amatic CS, cursive;
+  font-family:'Cormorant Infant',serif;
 }
 
 .container{
@@ -123,7 +123,7 @@ right:300px;
 }
 
 .content__always-visible-block_one-line{
-  font-family: 'Amatic CS', cursive;
+  font-family: 'Cormorant Infant',serif;
   font-size: 0.8em;
   width:90%;
   max-height: 130px;
