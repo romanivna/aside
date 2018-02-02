@@ -51,7 +51,7 @@ function content(){
 				contentWidth = $(window).width()-400;
 				$('body').width(contentWidth)
 				$('nav').width(contentWidth)
-			} else if($(window).width()<768) mobileAsides()
+			} else if($(window).width()<768) {mobileAsides()
 	} else {
 		var asidePosition = ($(window).width()-1024)/2;
 		$('.left-aside').css('left',asidePosition);
