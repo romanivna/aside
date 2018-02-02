@@ -46,7 +46,7 @@ $(document).ready(content)
 $(window).resize(content)
 function content(){
 
-	if ($(window).width()<1624){
+	if (($(window).width()<1624)&&($(window).width()>1000)){
 		var contentWidth = $(window).width()-600;
 		$('body').width(contentWidth)
 		$('nav').width(contentWidth)
