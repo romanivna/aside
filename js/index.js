@@ -155,6 +155,9 @@ function mobileAsides(){
 	$('.left-aside').css('left','-100%');
 	$('.right-aside').css('right','-100%');
 
+	$('.showLeftAside').css('display','block');
+	$('.showRightAside').css('display','block');
+
 	$('.body').width('80%');
 	$('.header').width('80%');
 	$('.content__always-visible-block').width('35%');
