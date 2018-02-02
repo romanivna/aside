@@ -58,6 +58,7 @@ html{
 .left-aside,
 .right-aside{
   padding-top:30px;
+  overflow: auto;
 }
 
 .content__item p,
@@ -133,6 +134,12 @@ right:300px;
 .showLeftAside,
 .showRightAside{
   display:none;
+}
+
+.asideMobile{
+  width:100%;
+  z-index:3;
+  background: #c7ac8d;
 }
 
 @media screen and (min-width:768px) and (max-width:1000px){
