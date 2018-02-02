@@ -43,3 +43,7 @@ a {
 .header__item_right-block{
   cursor: pointer;
 }
+
+.header__item_destination{
+  cursor:pointer;
+}

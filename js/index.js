@@ -1,8 +1,11 @@
 
 		/*soft scrolling*/
 $(document).ready(function(){
-	$(".header__item_destination a").click(function () {
-		elementClick = $(this).attr("href");
+	$(".header__item_destination").click(function () {
+		var documentNavigation = $(this)[0].childNodes[0];
+		console.log(documentNavigation)
+		var a = documentNavigation[0]
+		elementClick = $(documentNavigation).attr("href");
 		destination = $(elementClick).offset().top-50;
 		$("body,html").animate({scrollTop: destination }, 500);
 	});
@@ -101,7 +104,7 @@ function leftAside(count,a,val){
 		setTimeout(function(){$(a).css('display', 'none')},1000);
 	}
 } else if($(window).width()<600){
-	//for mobiles
+	mobileAsides()
 } else {
 	if (count%2!==0){
 		var windowWidth = $(window).width();
@@ -128,8 +131,8 @@ function rightAside(count,a){
 		$(a).animate({right:'200px'},1000);
 		setTimeout(function(){$(a).css('display', 'none')},1000);
 	}
-} else if($(window).width()<600){
-	//for mobiles
+} else if($(window).width()<768){
+	mobileAsides()
 
 } else if($(window).width()>1000){
 
@@ -137,7 +140,7 @@ function rightAside(count,a){
 		var windowWidth = $(window).width();
 		var bodyWidth = $('.body').width();
 		var asideSide = (windowWidth - bodyWidth)/2 - 300;
-		console.log(asideSide)
+
 		//console.log(a)
 	$(a).css('display', 'block');
 	$(a).animate({right: asideSide},1000);
