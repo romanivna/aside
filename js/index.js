@@ -42,21 +42,26 @@ $(window).scroll(function(){
 });
 
 		/*content width*/
-$(document).ready(content)
+$(document).ready(content);
+window.onload = function(){console.log('3');content()}
 $(window).resize(content)
 function content(){
-
+console.log('2')
 	if (($(window).width()<1624)&&($(window).width()>1000)){
 		var contentWidth = $(window).width()-600;
 		$('body').width(contentWidth)
 		$('nav').width(contentWidth)
-			if(($(window).width()>768)&&($(window).width()<1000)){
+	}
+	if(($(window).width()>768)&&($(window).width()<1000)){
 				contentWidth = $(window).width()-400;
 				$('body').width(contentWidth)
 				$('nav').width(contentWidth)
-			} else if($(window).width()<768) {mobileAsides()
+			}
+	if($(window).width()<768) {
+				console.log('s')
+				mobileAsides()
 	}
-} else {
+if($(window).width()>1624) {
 		var asidePosition = ($(window).width()-1024)/2;
 		$('.left-aside').css('left',asidePosition);
 		$('.right-aside').css('right',asidePosition);
@@ -152,11 +157,9 @@ function rightAside(count,a){
 }
 		/*for mobiles*/
 function mobileAsides(){
+	console.log('ok')
 	$('.left-aside').css('left','-100%');
 	$('.right-aside').css('right','-100%');
-
-	$('.showLeftAside').css('display','block');
-	$('.showRightAside').css('display','block');
 
 	$('.body').width('80%');
 	$('.header').width('80%');
