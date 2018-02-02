@@ -157,7 +157,7 @@ right:300px;
 }
 
 
-@media screen and (min-device-width : 0px) and (max-device-width : 768px){
+@media screen and (min-device-width : 0px) and (max-device-width : 768px) and (orientation : portait){
 .header,
 .footer{
   z-index:2;
