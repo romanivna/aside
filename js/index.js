@@ -179,7 +179,7 @@ function mobileAsides(){
 			}
 
 	}
-	$('.showRightAside').on('click',right;
+	$('.showRightAside').on('click',right);
 	$('#right').on('click',right);
 	function right(){
 		rightCount++
