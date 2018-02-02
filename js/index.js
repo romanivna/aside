@@ -164,8 +164,8 @@ function mobileAsides(){
 	$('.left-aside').addClass('asideMobile');
 	$('.right-aside').addClass('asideMobile');
 
-	$('.showLeftAside').on('click',left());
-	$('#left').on('click',left());
+	$('.showLeftAside').on('click',left);
+	$('#left').on('click',left);
 	function left(){
 			leftCount++
 			if (leftCount%2!==0){
