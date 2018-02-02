@@ -149,7 +149,7 @@ right:300px;
   background: #c7ac8d;
 }
 
-@media screen and (min-width:768px) and (max-width:1000px){
+@media screen and (min-device-width:768px) and (max-device-width:1000px){
   .left-aside,
   .right-aside{
     width:200px
@@ -157,7 +157,7 @@ right:300px;
 }
 
 
-@media screen and (max-width:768px){
+@media screen and (max-device-width:768px){
 .header,
 .footer{
   z-index:2;
