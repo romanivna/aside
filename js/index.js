@@ -178,23 +178,55 @@ function left(){
 console.log('ok')
 }
 
-$('.showRightAside').on('click',right);
-$('.header__item_right-block').on('click',rightForCount);
-function rightForCount(){
-	rightCount-=1
-	right()
+$('.showRightAside').on('click',rightForCount);
+$('.header__item_right-block').on('click',ForCount);
+function ForCount(){
+	rightCount--;
+	rightForCount();
 }
-function right(){
+function rightForCount(){
+	//rightCount-=1
+	console.log('start',rightCount)
+	if (rightCount==0){
 		rightCount++
+		showRight()
+	}else	if (rightCount%2!==0){
+	showRight()
+} else {
+	hideRight()
+}
+}
+
+function showRight(){
+	console.log('show', rightCount)
+	rightCount++
+	$('.right-aside').css('display', 'block');
+	$('.right-aside').animate({right:'0'},1000);
+	$('.showLeftAside').hide()
+
+}
+
+function hideRight(){
+	console.log('hide', rightCount)
+	rightCount--
+	$('.right-aside').animate({right:'-100%'},1000);
+	setTimeout(function(){$('.right-aside').css('display', 'none')},1000);
+	$('.showLeftAside').show();
+
+}
+
+function right(){
+console.log(rightCount)
+		rightCount++
+	console.log(rightCount)
 		if (rightCount%2!==0){
 		$('.right-aside').css('display', 'block');
 		$('.right-aside').animate({right:'0'},1000);
 		$('.showLeftAside').hide()
 		} else {
 		$('.right-aside').animate({right:'-100%'},1000);
-		$('.showLeftAside').addClass('show');
-		$('.showLeftAside').show();
 		setTimeout(function(){$('.right-aside').css('display', 'none')},1000);
+		$('.showLeftAside').show();
 		}
 
 	}
